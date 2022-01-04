@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to right, #e42222 0%, #add10c 100%);
+    font-size: 12px; }
+    .topnav {
+     
+        overflow: hidden;
+        font-family: Verdana;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #2ce414;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 22px;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: rgb(218, 205, 205);
+        color: black;
+      }
+      
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #c106e6;
+        color: rgb(37, 233, 102);
+        color: ;
+    }
+    hr.style-rainbow {
+      border: 0;
+      height: 4px;
+      background: #ff0000;
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff0000), color-stop(25%,#ffff00), color-stop(50%,#00ff00), color-stop(75%,#00ffff), color-stop(100%,#0000ff));
+    }
+      .logo {
+        width: 200px;
+        cursor: pointer;
+        border-radius: 80%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @keyframes fadeIn {
+        from {top: 20%; opacity: 0;}
+        to {top: 100; opacity: 1;}
+        
+      
+      
+      @-webkit-keyframes fadeIn {
+        from {top: 20%; opacity: 0;}
+        to {top: 100; opacity: 1;}
+        
+      }
+      
+      .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        animation: fadeIn 1000ms ease;
+        -webkit-animation: fadeIn 1000ms ease;
+        
+      }
+      
+      h1 {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        line-height: 1;
+        font-weight: 700;
