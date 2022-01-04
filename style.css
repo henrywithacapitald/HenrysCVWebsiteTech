@@ -1,0 +1,66 @@
+body{
+    background-color:black;
+}
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #d83d3d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(218, 205, 205);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    /* background-color: #9e2a2a;
+    color: rgb(233, 37, 37); */
+  }
+  .logo {
+    width: 200px;
+    cursor: pointer;
+    border-radius: 80%;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+
+    
+  }
+  .maintext {
+      color: green;
+     font-size: 30px;
+     text-align:center;
+     text-transform: uppercase;
+     position: absolute;
+    top: 9.4em;
+     transform: translateY(-50%);
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     text-align: center;
+     font-size: 4em;
+     font-family: sans-serif;
+     background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     text-shadow: 0 0 2px rgba(235, 22, 22, 0.5);
+ 
+
+     
+  }
+  hr.style-rainbow {
+    border: 0;
+    height: 4px;
+    background: #ff0000;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff0000), color-stop(25%,#ffff00), color-stop(50%,#00ff00), color-stop(75%,#00ffff), color-stop(100%,#0000ff));
