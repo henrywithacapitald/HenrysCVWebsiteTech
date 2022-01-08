@@ -1,3 +1,9 @@
+![Screen Shot 2022-01-05 at 12 10 09 AM](https://user-images.githubusercontent.com/95125800/148050665-a3e412aa-95fe-4f5e-8219-986cd893aaf3.png)
+<!-- ![Screen Shot 2022-01-05 at 12 10 12 AM](https://user-images.githubusercontent.com/95125800/148050682-8d0df518-1c7c-4453-a24e-d71377611df8.png) -->
+![Screen Shot 2022-01-05 at 12 16 53 AM](https://user-images.githubusercontent.com/95125800/148051392-4ac65f89-4bdd-4c9a-bad8-ba73fee99517.png)
+![Screen Shot 2022-01-05 at 12 19 15 AM](https://user-images.githubusercontent.com/95125800/148051745-d46cc2e3-5d27-4083-bc11-85531a9bd39b.png)
+
+
 ### Hi there, I'm Henry - 👋 
 ### From New Zealand!
  
