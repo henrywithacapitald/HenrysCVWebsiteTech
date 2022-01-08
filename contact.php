@@ -1,7 +1,4 @@
-<php?
 
-include('contactform.php');
-?>
 
 
 
@@ -24,7 +21,7 @@ include('contactform.php');
     </div>
     <div class="image">
     <hr class="style-ranibow"> 
-    <form class="content-form" action="contactform.php" method="post">
+    <form class="content-form" action="contact.php" method="post" name="form">
     <div class="background">
         <class class="container">
           <div class="screen">
@@ -43,6 +40,21 @@ include('contactform.php');
             <div class="screen-body">
               <div class="screen-body-item left">
                 <div class="app-title">
+                <?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
                   <span>CONTACT</span>
                   <span>Me</span>
                 </div>
@@ -51,20 +63,21 @@ include('contactform.php');
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="Enter Your NAME" value="" name="name" required>
+                  <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
+
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL" name="mail">
+                  <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO" name="number">
+                  <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
                   </div>
                   <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE" name="subject">
+                  <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
                   </div>
                   <div class="app-form-group buttons">
                     <button class="app-form-button"> CANCEL</button>
-                    <button class="app-form-button">  SEND</button>
+                    <button class="btn btn-success" name="btn-send"> Send </button>
                   </div>
                 </div>
               </div>
@@ -91,3 +104,31 @@ include('contactform.php');
       
 </body>
 </html>
+?php 
+
+    if(isset($_POST['btn-send']))
+    {
+       $UserName = $_POST['UName'];
+       $Email = $_POST['Email'];
+       $Subject = $_POST['Subject'];
+       $Msg = $_POST['msg'];
+
+       if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
+       {
+           header('location:contact.php?error');
+       }
+       else
+       {
+           $to = "tayotej233@wusehe.com";
+
+           if(mail($to,$Subject,$Msg,$Email))
+           {
+               header("location:contact.php?success");
+           }
+       }
+    }
+    else
+    {
+        header("location:contact.php");
+    }
+?>

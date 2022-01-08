@@ -1,7 +1,4 @@
-<php?
 
-include('contactform.php');
-?>
 
 
 
@@ -24,7 +21,7 @@ include('contactform.php');
     </div>
     <div class="image">
     <hr class="style-ranibow"> 
-    <form class="content-form" action="contactform.php" method="post">
+    <form class="content-form" action="contact.php" method="post" name="myemailform">
     <div class="background">
         <class class="container">
           <div class="screen">
@@ -54,17 +51,17 @@ include('contactform.php');
                     <input class="app-form-control" placeholder="Enter Your NAME" value="" name="name" required>
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL" name="mail">
+                    <input class="app-form-control" placeholder="EMAIL" name="email">
                   </div>
                   <div class="app-form-group">
                     <input class="app-form-control" placeholder="CONTACT NO" name="number">
                   </div>
                   <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE" name="subject">
+                    <input class="app-form-control" placeholder="MESSAGE" name="message">
                   </div>
                   <div class="app-form-group buttons">
                     <button class="app-form-button"> CANCEL</button>
-                    <button class="app-form-button">  SEND</button>
+                    <button class="app-form-button" type="submit" value="Send Form">  SEND</button>
                   </div>
                 </div>
               </div>
